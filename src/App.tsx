@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
 
 function App() {
   return (
-    < darkMode={false} />
+    <ChatWidget isOpen={true} darkMode={false} />
   )
 }
 
