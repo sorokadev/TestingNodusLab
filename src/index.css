@@ -404,6 +404,79 @@
   --save-image-opacity: 0.7;
 }
 
+.panelControlBtn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  border: 2px solid #999;
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.panelControlBtn:hover {
+  background: linear-gradient(145deg, #e0e0e0, #b8b8b8);
+  border-color: #777;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.panelControlBtn:active {
+  background: linear-gradient(145deg, #d0d0d0, #a8a8a8);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.researchpane {
+  background: linear-gradient(145deg, #e8f4fd, #b8d4f0) !important;
+  border-color: #4a90e2 !important;
+  color: #2c5aa0 !important;
+}
+
+.researchpane:hover {
+  background: linear-gradient(145deg, #d0e8fc, #a0c4e8) !important;
+  border-color: #357abd !important;
+}
+
+/* Додаткові старі стилі */
+.old-style-container {
+  background: #f5f5f5;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.old-style-title {
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+  color: #8b4513;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.old-style-text {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 .pure-menu li:not(.app-context-link) a {
   color: var(--menu-text-color);
 }
