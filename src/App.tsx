@@ -6,6 +6,21 @@ if (typeof window !== 'undefined') {
   import('@infranodus/infranodus-ai/css')
 }
 
+const mockGraph = {
+  id: "test-graph-id",
+  graphName: "ai_idea_origin-of"
+}
+
+const mockTopics = [{
+  id: "topic-1",
+  name: "Test Topic"
+}]
+
+const mockConcepts = [
+  { name: "concept1" },
+  { name: "concept2" }
+]
+
 function App() {
   return (
     <>
@@ -58,7 +73,13 @@ function App() {
           8. Structure
         </button>
       </ul>
-      <ChatWidget darkMode={true} />;
+      <ChatWidget
+        isOpen={true}
+        darkMode={true}
+        selectedGraph={mockGraph}
+        selectedTopics={mockTopics}
+        selectedConcepts={mockConcepts}
+      />
     </>
   );
 }
