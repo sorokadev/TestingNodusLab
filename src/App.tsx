@@ -76,6 +76,8 @@ function App() {
       <ChatWidget
         isOpen={true}
         darkMode={true}
+        appMode="local"
+        useMockData={true}
         selectedGraph={mockGraph}
         selectedTopics={mockTopics}
         selectedConcepts={mockConcepts}
